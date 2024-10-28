@@ -10,12 +10,24 @@
     <p id="join"></p>
     <p id="pop1"></p>
     <p id="pop2"></p>
+    <p id="addition"></p>
     <script>
         //declare array
         var house=["Bungalow","Mansion","Duplex","Semi-Detatched Duplex","Penthouse"]
         document.getElementById("join").innerHTML=house.join(",");
         document.getElementById("pop1").innerHTML;house.pop();
         document.getElementById("pop2").innerHTML=house
+
+        //Call Stack
+        function add(a,b){
+            return a+b;
+        }
+        function average(a,b){
+            return (a+b)/2
+        }
+        let results=average(10,30);
+        document.getElementById("addition").innerHTML=results
+
     </script>
 </body>
 </html>
